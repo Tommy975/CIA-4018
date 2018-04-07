@@ -1,0 +1,56 @@
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<h1 align="center"> INSCRIPTION </h1>
+<br /><br /><br />
+<div class="formulaire-section"> 
+	<div class="container "> 
+		<form id="bookForm" method="POST" action="add.php">
+	  
+			<div class="form-group row col-sm-6"> 
+			<label for="nom" class="col-sm-3 col-form-label">Nom</label> 
+				<div class="col-sm-9"> 
+					<input class="form-control" name="nom" type="text" placeholder="Votre Nom" id="nom" required> 
+				</div> 
+			</div> 
+
+	  			<div class="form-group row col-sm-6"> 
+			<label for="prenom" class="col-sm-3 col-form-label">Prenom</label> 
+				<div class="col-sm-9"> 
+					<input class="form-control" name="prenom" type="text" placeholder="Votre Prenom" id="prenom" required> 
+				</div> 
+			</div> 
+
+			<div class="form-group row col-sm-6"> 
+				<label class="col-sm-3 col-form-label col-form-label" for="email">Email</label> 
+				<div class="col-sm-9"> 
+					<input type="email" placeholder="eab1234@umoncton.ca" class="form-control form-control" id="email" name="email" required>
+				</div> 
+			</div> 
+		  	
+		  	<div class="form-group row col-sm-6"> 
+				<label class="col-sm-3 col-form-label col-form-label" for="mdp">Mot de Passe</label> 
+				<div class="col-sm-9"> 
+					<input type="password" placeholder="Votre mot de passe" class="form-control form-control" id="mdp" name="mdp" required>
+				</div> 
+			</div> 
+
+
+			<div class="form-group row col-sm-6"> 
+				<label class="col-sm-3  col-form-label" for="phone">Phone</label> 
+				<div class="col-sm-9"> 
+					<input type="tel" class="form-control form-control" pattern="[(]?[0-9]{3}[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}" placeholder="(___) 000 - 0000" id="phone" name="phone" required> 
+				</div> 
+			</div> 
+			
+		<!--  
+			<div class="form-group row col-sm-6"> <label class="col-sm-3 form-control-label" >Guide</label> 
+				<div class="col-sm-9"> 
+					<label class="radio-inline"> <input type="radio" id="guide" name="guide" value="oui" required> Oui </label> 
+					<label class="radio-inline"> <input type="radio" id="guide" name="guide" value="non"> Non </label> 
+				</div> 
+			</div> 
+		-->  
+			<button type="submit" class="btn btn-primary btn-lg btn-block">S'inscrire</button> 
+		</form> 
+	</div> 
+</div>
